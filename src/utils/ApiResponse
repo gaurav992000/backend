@@ -1,0 +1,8 @@
+class ApiResponse{
+    constructor(statuscocde,data,message="Success"){
+        this.statuscocde=statuscocde
+        this.data=data
+        this.message=message
+        this.success=statuscocde<400
+    }
+}
